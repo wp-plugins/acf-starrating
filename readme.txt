@@ -14,16 +14,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Add the possibility to use rating field in ACF.
 
 Plug-in provide three calculation method for voting:
-* calculate by cookies (any visitor);
-* by IP (any visitor);
-* by user id (registered users only).
+
+1. calculate by cookies (any visitor);
+2. by IP (any visitor);
+3. by user id (registered users only).
+
 If "calculated by cookies" is selected, the only users which use browser with 
 cookies enabled will be able to vote
 
 In field settings you can also:
-* open|close vote;
-* tune the number of stars (1 to 20);
-* specify the method of re-voting - possible(period)|never
+
+1. open|close vote;
+2. tune the number of stars (1 to 20);
+3. specify the method of re-voting - possible(period)|never
 
 Use the_field($field_key, $post_id) or get_field($field_key, $post_id) function
 in page template for field output (see ACF documentation).
@@ -41,6 +44,7 @@ Thanks to Ivan Shamshur for JS.
 = Compatibility =
 
 This ACF field type is compatible with:
+
 * ACF 4
 
 == Installation ==
