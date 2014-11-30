@@ -1,4 +1,4 @@
-=== Advanced Custom Fields: Star Rating Field ===
+=== ACF: Star Rating Field ===
 Contributors: lienann
 Tags: acf, acf4, advanced custom fields, star rating, rate, rating, 5 star, post rating, user rating
 Requires at least: 3.5
@@ -7,23 +7,23 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-"Star rating" field. Add-on to ACF plugin.
+"Star rating" field. Add-on to Advanced Custom Fields plugin.
 
 == Description ==
 
 Add the possibility to use rating field in ACF.
 
 Plug-in provide three calculation method for voting:
-    1. calculate by cookies (any visitor);
-    2. by IP (any visitor);
-    3. by user id (registered users only).
+* calculate by cookies (any visitor);
+* by IP (any visitor);
+* by user id (registered users only).
 If "calculated by cookies" is selected, the only users which use browser with 
 cookies enabled will be able to vote
 
 In field settings you can also:
-    1. open|close vote;
-    2. tune the number of stars (1 to 20);
-    3. specify the method of re-voting - possible(period)|never
+* open|close vote;
+* tune the number of stars (1 to 20);
+* specify the method of re-voting - possible(period)|never
 
 Use the_field($field_key, $post_id) or get_field($field_key, $post_id) function
 in page template for field output (see ACF documentation).
