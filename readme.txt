@@ -2,8 +2,8 @@
 Contributors: lienann
 Tags: acf, acf4, advanced custom fields, star rating, rate, rating, 5 star, post rating, user rating
 Requires at least: 3.5
-Tested up to: 4.0
-Stable tag: 1.0
+Tested up to: 4.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,21 +31,26 @@ In field settings you can also:
 Use the_field($field_key, $post_id) or get_field($field_key, $post_id) function
 in page template for field output (see ACF documentation).
 
+In admin panel the rating is inactive.
+
 **Attention!** Before removing the plugin files read uninstall.php
+
+**Languages:** English, Русский
 
 I apologize for possible mistakes in plugin translation.
 I will be glad to accept the help with the correct translation of a plugin into
 English and to correction of my mistakes.
 
-**Gratitudes:**
+= Gratitudes: =
 
 Thanks to Ivan Shamshur for JS.
 
 = Compatibility =
 
-This ACF field type is compatible with:
+This ACF field type is compatible with: ACF 4
 
-* ACF 4
+
+For developers: https://github.com/lienann/acf-starrating
 
 == Installation ==
 
@@ -57,6 +62,10 @@ Please refer to the description and FAQ for more info regarding the field type
 settings.
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed bug with cookie setup.
+* Updated documentations.
 
 = 1.0.0 =
 * Initial Release.
@@ -72,7 +81,7 @@ settings.
 = How to display field on the page? =
 
 Add the_field($field_key, $post_id) or get_field($field_key, $post_id) into page
-template where it is necessary for you:
+template where it is necessary for you (use $field_name only, if you are sure that field value exists):
 
 `<?php
     // add fields in the Loop
